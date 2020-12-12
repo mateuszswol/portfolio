@@ -18,6 +18,16 @@ set :log_level, :info
 set :linked_files, fetch(:linked_files, []).push('.env')
 set :linked_dirs, fetch(:linked_dirs, []).push('web/app/uploads')
 
+append :linked_dirs, '.bundle'
+
+SSHKit.config.command_map[:composer] = "/home/btpopak/composer.phar"
+
+# Settings for Grunt
+set :grunt_tasks, 'deploy:production deploy:staging'
+before 'deploy:updated', 'grunt'
+set :grunt_file, -> { release_path.join('config/Gruntfile.js') }
+
+
 namespace :deploy do
   desc 'Restart application'
   task :restart do
