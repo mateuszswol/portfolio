@@ -3,6 +3,7 @@ GEM
   specs:
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
+    bcrypt_pbkdf (1.0.1)
     capistrano (3.14.1)
       airbrussh (>= 1.0.0)
       i18n
@@ -18,6 +19,7 @@ GEM
       capistrano (~> 3.6)
       sshkit (~> 1.11)
     concurrent-ruby (1.1.7)
+    ed25519 (1.2.4)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     net-scp (3.0.0)
@@ -32,11 +34,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt_pbkdf (>= 1.0, < 2.0)
   capistrano (~> 3.4)
   capistrano-composer
   capistrano-grunt
   capistrano-npm
   capistrano-wpcli
+  ed25519 (>= 1.2, < 2.0)
 
 BUNDLED WITH
    1.17.3

@@ -21,6 +21,8 @@ set :linked_dirs, fetch(:linked_dirs, []).push('web/app/uploads')
 append :linked_dirs, '.bundle'
 
 SSHKit.config.command_map[:composer] = "/home/btpopak/composer.phar"
+SSHKit.config.command_map[:npm] = "/usr/local/node/bin/npm"
+SSHKit.config.command_map[:grunt] = "/home/btpopak/domains/mateuszswol.pl/node_modules/grunt-cli/bin/grunt"
 
 # Settings for Grunt
 set :grunt_tasks, 'deploy:production deploy:staging'

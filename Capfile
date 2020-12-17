@@ -10,11 +10,8 @@ require 'capistrano/composer'
 # Load tasks from Capistrano WPCLI
 require 'capistrano/wpcli'
 
-# Load tasks from Grunt
-require 'capistrano/grunt'
-
-# Load npm
 require 'capistrano/npm'
+require 'capistrano/grunt'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 # Customize this path to change the location of your custom tasks.
