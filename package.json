@@ -1,0 +1,13 @@
+{
+  "name": "Portfolio",
+  "description": "New template for Portfolio Site",
+  "version": "1.0.0",
+  "dependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-sass": "^2.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-sass": "^2.0.0"
+  }
+}
