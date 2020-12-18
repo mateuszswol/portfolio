@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '../web/app/themes/mats-theme/assets/scss',
                     src: ['*.scss'],
-                    dest: '../web/app/themes/mats-theme/assets/scss/css',
+                    dest: '../web/app/themes/mats-theme/assets/css',
                     ext: '.css'
                 }]
             }
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: '../web/app/themes/mats-theme/assets/scss/css',
+                    cwd: '../web/app/themes/mats-theme/assets/css',
                     src: ['*.css', '!*.min.css'],
                     dest: '../web/app/themes/mats-theme/assets/css',
                     ext: '.min.css'

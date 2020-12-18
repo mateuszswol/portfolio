@@ -20,6 +20,14 @@ if ( !defined('ABSPATH') ){ die(); }
         <meta charset="UTF-8" />
         <meta name="generator" content="MatsTheme" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+        <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-Light.woff2' ?>" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-Regular.woff2' ?>" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-SemiBold.woff2' ?>" type="font/woff2" crossorigin="anonymous">
+        <?php
+            if (WP_ENV === 'development') {
+                echo '<link rel="stylesheet" href="/app/themes/mats-theme/assets/css/main.css" />';
+            }
+        ?>
         <?php wp_head(); ?>
     </head>
     <body id="top">
