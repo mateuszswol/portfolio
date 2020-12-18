@@ -27,6 +27,9 @@ if ( !defined('ABSPATH') ){ die(); }
             if (WP_ENV === 'development') {
                 echo '<link rel="stylesheet" href="/app/themes/mats-theme/assets/css/main.css" />';
             }
+            else{
+                echo '<link rel="stylesheet" href="/app/themes/mats-theme/assets/css/main.min.css" />';
+            }
         ?>
         <?php wp_head(); ?>
     </head>

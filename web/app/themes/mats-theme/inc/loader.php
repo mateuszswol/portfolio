@@ -18,6 +18,7 @@ define('MATS_THEME_HELPERS', MATS_THEME . '/inc/helpers/');
 
 // Front-end vars
 define('MATS_THEME_FONTS', MATS_THEME_URI . '/assets/fonts/');
+define('MATS_THEME_UPLOADS', '/app/uploads/');
 
 require_once( MATS_THEME_HELPERS . 'menus.php' );
 require_once( MATS_THEME_HELPERS . 'cleanup.php' );

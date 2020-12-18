@@ -24,3 +24,5 @@ set :deploy_to, -> { "/home/btpopak/domains/mateuszswol.pl/public_html/staging" 
 #  }
 
 fetch(:default_env).merge!(wp_env: :staging)
+
+after "deploy:updated", "wpcli:db:push"
