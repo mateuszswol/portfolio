@@ -1,3 +1,25 @@
 // Font
-$font-path: "/app/themes/mats-theme/assets/fonts/";
+$font-path: '/app/themes/mats-theme/assets/fonts/';
 $font-family: 'Poppins', sans-serif;
+$main-font-color: #666;
+$main-line-height: 1.75em;
+
+// Headers
+$header-line-height: 1.19em;
+$header-font-weight: 600;
+$header-font-color: #333;
+
+$h1-size: 48px;
+$h2-size: 32px;
+$h3-size: 24px;
+$h4-size: 20px;
+$h5-size: 18px;
+$h6-size: 16px;
+
+
+// Theme color
+$theme-color: #6961f1;
+$theme-color-hover: #525073;
+
+// Media
+$media-path: '/app/uploads/';

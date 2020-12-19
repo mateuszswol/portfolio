@@ -1,6 +1,6 @@
 @import 'utilities/variables';
 //@import 'utilities/functions';
-//@import 'utilities/mixins';
+@import 'utilities/mixins';
 
 //@import 'vendors/bootstrap';
 //@import 'vendors/jquery-ui';
@@ -8,9 +8,9 @@
 @import 'base/reset';
 @import 'base/typography';
 
-//@import 'layout/navigation';
-//@import 'layout/grid';
-//@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
 //@import 'layout/footer';
 //@import 'layout/forms';
 

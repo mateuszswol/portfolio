@@ -36,8 +36,8 @@ if ( !defined('ABSPATH') ){ die(); }
     <body id="top">
         <div class="container">
             <header class="header">
-                <a class="logo" href="<?php esc_url(home_url()); ?>">
-                    <img class="logo__img" src="/app/uploads/logo-mateusz-swol-400x-300x59.png" />
+                <a class="logo" href="<?php echo esc_url(home_url()); ?>">
+                    <img class="logo__img" src="/app/uploads/logo-mateusz-swol.svg" />
                 </a>
                 <nav class="menu">
                     <?php wp_nav_menu([

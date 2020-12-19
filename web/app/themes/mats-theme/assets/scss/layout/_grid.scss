@@ -1,0 +1,22 @@
+.container{
+  background-color: #fff;
+  margin:0;
+  max-width: 100%;
+  padding: 42px 30px 60px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    border-radius: 40px;
+    margin: 3% auto;
+    max-width: 94%;
+    padding: 42px 60px 60px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .container {
+    max-width: 1310px;
+    padding: 42px 70px 60px;
+  }
+}

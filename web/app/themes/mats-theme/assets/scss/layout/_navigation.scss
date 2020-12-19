@@ -1,0 +1,23 @@
+.menu {
+  display: inline-block;
+  float: right;
+  height: 50px;
+  vertical-align: middle
+}
+
+.menu__item {
+  display: inline-block
+}
+
+.menu__link {
+  color: #333;
+  display: block;
+  padding: 17px 20px;
+  opacity: .55;
+  @include transition(opacity);
+
+  &:hover {
+    color: #333;
+    opacity: 1
+  }
+}
