@@ -53,3 +53,4 @@ if ( !defined('ABSPATH') ){ die(); }
                     ]); ?>
                 </nav>
             </header>
+            <main class="main">

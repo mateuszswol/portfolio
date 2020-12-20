@@ -22,3 +22,10 @@ define('MATS_THEME_UPLOADS', '/app/uploads/');
 
 require_once( MATS_THEME_HELPERS . 'menus.php' );
 require_once( MATS_THEME_HELPERS . 'cleanup.php' );
+require_once( MATS_THEME_HELPERS . 'acf.php' );
+require_once( MATS_THEME_HELPERS . 'images.php' );
+
+add_action('admin_enqueue_scripts', function() {
+    wp_register_script('backend', get_template_directory_uri() . '/assets/js/backend.js',array( 'wp-blocks', 'wp-hooks', 'wp-block-editor', ));
+    wp_enqueue_script('backend');
+});

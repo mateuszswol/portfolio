@@ -1,8 +1,7 @@
 .container{
   background-color: #fff;
-  margin:0;
+  margin: 0;
   max-width: 100%;
-  padding: 42px 30px 60px;
 }
 
 @media (min-width: 992px) {
@@ -10,13 +9,49 @@
     border-radius: 40px;
     margin: 3% auto;
     max-width: 94%;
-    padding: 42px 60px 60px;
   }
 }
 
 @media (min-width: 1450px) {
   .container {
     max-width: 1310px;
-    padding: 42px 70px 60px;
   }
+}
+
+.main {
+  padding: 50px 30px 40px;
+
+  @media (min-width: 992px) {
+    padding: 50px 60px 40px;
+  }
+
+  @media (min-width: 1450px) {
+    padding: 50px 70px 40px;
+  }
+
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  &--center {
+    align-items: center !important;
+  }
+
+  &__col {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &--big-left {
+      padding-left: 40px;
+    }
+
+    &--big-right {
+      padding-right: 40px;
+    }
+  }
+
 }

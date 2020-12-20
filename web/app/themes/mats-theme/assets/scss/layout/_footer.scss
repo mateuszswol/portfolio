@@ -1,0 +1,41 @@
+.footer {
+  background-color: #fcfcfc;
+  border-top: 2px solid #eee;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: #aaa;
+  padding: 20px 30px;
+  position: relative;
+
+  @media (min-width: 992px) {
+    padding: 20px 60px;
+  }
+
+  @media (min-width: 1450px) {
+    padding: 20px 70px;
+  }
+
+  &__left, &__right {
+    display: inline-block;
+    vertical-align: middle
+  }
+
+  &__right {
+    float: right
+  }
+
+  &__social {
+    display: inline-block;
+    margin-right: 25px
+  }
+
+  &__link {
+    color: #aaa;
+    @include transition(color);
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+}
