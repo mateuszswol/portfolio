@@ -43,5 +43,7 @@ if( have_rows('button') ):
         <?php
 
     endwhile;
-
+    ?>
+    </div>
+    <?php
 endif;

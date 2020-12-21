@@ -1,12 +1,3 @@
-.image-in-circle--right{
-  text-align:right;
-}
-.image-in-circle__img {
-  width: 360px;
-  border-radius: 100%;
-  border: 20px solid #fff;
-  box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
-}
 .image-in-circle {
 
   &--left {
@@ -25,6 +16,6 @@
     border: 20px solid #fff;
     border-radius: 100%;
     box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
-    width: 340px;
+    width: 360px;
   }
 }

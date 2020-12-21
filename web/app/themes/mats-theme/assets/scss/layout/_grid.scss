@@ -6,6 +6,11 @@
 
 @media (min-width: 992px) {
   .container {
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-name:flipInLeft;
+    animation-timing-function: ease-out;
     border-radius: 40px;
     margin: 3% auto;
     max-width: 94%;
