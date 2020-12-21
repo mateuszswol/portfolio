@@ -1,0 +1,17 @@
+.gallery{
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    filter: grayscale(100%);
+    opacity:.8;
+    width:64px;
+    @include transition();
+
+    &:hover {
+      filter: none;
+      opacity:1;
+    }
+  }
+}

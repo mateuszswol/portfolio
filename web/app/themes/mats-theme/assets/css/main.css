@@ -89,17 +89,36 @@ h4,
 h5,
 h6 {
   color: #333;
+  display: inline-block;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  line-height: 1.19em;
+  line-height: 1.75em;
   margin: 0;
+  position: relative;
   text-transform: initial; }
 
 h1 {
-  font-size: 48px; }
+  font-size: 48px;
+  line-height: 1.19em; }
 
 h2 {
   font-size: 32px; }
+  h2:before {
+    background-color: #eee;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+  h2:after {
+    background-color: #6961f1;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 50px; }
 
 h3 {
   font-size: 24px; }
@@ -236,15 +255,6 @@ img {
     .footer__link:hover {
       color: #333; }
 
-.image-in-circle--right {
-  text-align: right; }
-
-.image-in-circle__img {
-  width: 360px;
-  border-radius: 100%;
-  border: 20px solid #fff;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1); }
-
 .image-in-circle--left {
   text-align: left; }
 .image-in-circle--center {
@@ -255,7 +265,10 @@ img {
   border: 20px solid #fff;
   border-radius: 100%;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
-  width: 340px; }
+  width: 360px;
+  transition: border 0.2s linear; }
+  .image-in-circle__img:hover {
+    border: 4px solid #fff; }
 
 .buttons__btn {
   border-radius: 2em;
@@ -277,6 +290,29 @@ img {
     .buttons__btn--extra:hover {
       box-shadow: inset 0 0 0 2em #aaa;
       color: #fff; }
+
+.block-with-icon__img {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 8px;
+  width: 60px;
+  vertical-align: top; }
+.block-with-icon__content {
+  display: inline-block;
+  width: calc( 100% - 85px );
+  vertical-align: top; }
+
+.gallery__list {
+  display: flex;
+  justify-content: space-between; }
+.gallery__img {
+  filter: grayscale(100%);
+  opacity: .8;
+  width: 64px;
+  transition: all 0.4s ease; }
+  .gallery__img:hover {
+    filter: none;
+    opacity: 1; }
 
 .subheading-home {
   color: #aaa; }

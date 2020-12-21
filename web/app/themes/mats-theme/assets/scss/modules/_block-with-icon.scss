@@ -1,0 +1,17 @@
+.block-with-icon{
+
+  &__img {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 8px;
+    width: 60px;
+    vertical-align: top;
+  }
+
+  &__content {
+    display: inline-block;
+    width: calc( 100% - 85px );
+    vertical-align: top;
+  }
+
+}

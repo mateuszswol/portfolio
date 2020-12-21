@@ -48,7 +48,45 @@ function acf_buttons_block() {
 	}
 }
 
+function acf_block_with_icon_block() {
+
+	// check function exists
+	if( function_exists('acf_register_block') ) {
+
+		// register a portfolio item block
+		acf_register_block(array(
+			'name'				=> 'block-with-icon',
+			'title'				=> __('Block with icon'),
+			'description'		=> __('Creating a block with icon attached to left'),
+			'render_template'	=> 'template-parts/blocks/block-with-icon/block-block-with-icon.php',
+			'category'			=> 'layout',
+			'icon'				=> 'align-pull-left',
+			'keywords'			=> array( 'icon' ),
+		));
+	}
+}
+
+function acf_gallery_block() {
+
+	// check function exists
+	if( function_exists('acf_register_block') ) {
+
+		// register a portfolio item block
+		acf_register_block(array(
+			'name'				=> 'gallery',
+			'title'				=> __('Gallery'),
+			'description'		=> __('Creating a gallery'),
+			'render_template'	=> 'template-parts/blocks/gallery/block-gallery.php',
+			'category'			=> 'layout',
+			'icon'				=> 'format-gallery',
+			'keywords'			=> array( 'gallery' ),
+		));
+	}
+}
+
 add_action('acf/init', 'acf_image_in_circle_block');
 add_action('acf/init', 'acf_buttons_block');
+add_action('acf/init', 'acf_block_with_icon_block');
+add_action('acf/init', 'acf_gallery_block');
 
 ?>

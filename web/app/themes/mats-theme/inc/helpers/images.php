@@ -6,4 +6,10 @@ add_image_size('1024x', 1024);
 add_image_size('768x', 768);
 add_image_size('640x', 640);
 add_image_size('420x', 420);
+
+function mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'mime_types');
 ?>
