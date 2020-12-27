@@ -1,0 +1,146 @@
+.container{
+  background-color: #fff;
+  margin: 0;
+  max-width: 100%;
+
+  @media (min-width: 992px) {
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-name: flipInLeft;
+    animation-timing-function: ease-out;
+    border-radius: 40px;
+    margin: 3% auto;
+    max-width: 94%;
+  }
+
+  @media (min-width: 1450px) {
+    max-width: 1310px;
+  }
+}
+
+.main {
+  padding: 30px 30px 40px;
+
+  @media (min-width: 992px) {
+    padding: 30px 60px 40px;
+  }
+
+  @media (min-width: 1450px) {
+    padding: 30px 70px 40px;
+  }
+
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  &--center {
+    align-items: center !important;
+  }
+
+  &--first {
+    background-color: #eeeeee50;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding: 30px 15px 40px;
+    margin-left: -30px;
+    margin-right: -30px;
+
+    @media (min-width: 992px) {
+      padding: 70px 45px;
+      margin-left: -60px;
+      margin-right: -60px;
+    }
+
+    @media (min-width: 1450px) {
+      padding: 70px 55px;
+      margin-left: -70px;
+      margin-right: -70px;
+    }
+  }
+
+  &__col {
+    padding-left: 15px;
+    padding-right: 15px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+
+      &--one {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%
+      }
+      &--two {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%
+      }
+      &--three {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%
+      }
+      &--four {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%
+      }
+      &--five {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%
+      }
+      &--six {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%
+      }
+      &--seven {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%
+      }
+      &--eight {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%
+      }
+      &--nine {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%
+      }
+      &--ten {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%
+      }
+      &--eleven {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%
+      }
+      &--twelve {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+      }
+
+    }
+
+    &--big-left {
+      padding-left: 40px;
+    }
+
+    &--big-right {
+      padding-right: 40px;
+    }
+  }
+}

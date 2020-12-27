@@ -1,0 +1,23 @@
+.block-with-icon{
+
+  margin-bottom: 30px;
+
+  &__img {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 8px;
+    width: 60px;
+    vertical-align: top;
+  }
+
+  &__content {
+    display: inline-block;
+    width: calc( 100% - 85px );
+    vertical-align: top;
+  }
+
+  &__title {
+    margin-bottom: 0px;
+  }
+
+}

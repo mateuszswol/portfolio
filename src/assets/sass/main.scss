@@ -1,0 +1,32 @@
+@import 'utilities/variables';
+@import 'utilities/animations';
+@import 'utilities/mixins';
+
+//@import 'vendors/bootstrap';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+//@import 'layout/forms';
+
+@import 'modules/image-in-circle';
+@import 'modules/buttons';
+@import 'modules/block-with-icon';
+@import 'modules/gallery';
+@import 'modules/timeline';
+@import 'modules/special-list';
+@import 'modules/portfolio';
+
+@import 'pages/home';
+@import 'pages/sidebar';
+//@import 'pages/contact';
+
+@import 'splide/core/splide-core';
+@import 'splide/default/splide-default';
+
+//@import 'themes/theme';
+//@import 'themes/admin';
