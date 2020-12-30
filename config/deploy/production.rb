@@ -1,4 +1,5 @@
 set :stage, :production
+set :branch, 'main'
 
 # Simple Role Syntax
 # ==================
@@ -8,7 +9,9 @@ set :stage, :production
 
 # Extended Server Syntax
 # ======================
-server 'example.com', user: 'deploy', roles: %w{web app db}
+server 'ssd13.cyber-folks.pl', user: 'btpopak', port: 59184, password: 'vAmY7GLc_Y', roles: %w{web app db}
+
+set :deploy_to, -> { "/home/btpopak/domains/mateuszswol.pl/public_html/production" }
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
@@ -21,3 +24,5 @@ server 'example.com', user: 'deploy', roles: %w{web app db}
 #  }
 
 fetch(:default_env).merge!(wp_env: :production)
+
+after "deploy:updated", "wpcli:db:push"

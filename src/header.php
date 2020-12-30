@@ -23,9 +23,13 @@ if ( !defined('ABSPATH') ){ die(); }
         <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-Light.woff2' ?>" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-Regular.woff2' ?>" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-SemiBold.woff2' ?>" type="font/woff2" crossorigin="anonymous">
-        <?php
-            echo '<link rel="stylesheet" href="/app/themes/mats-theme/assets/css/main.css" />';
-        ?>
+        <style type="text/css">
+            <?php
+                $my_file = fopen(get_template_directory().'/assets/css/main.css','r') or die("Unable to open file!");
+                echo fread($my_file,filesize(get_template_directory().'/assets/css/main.css'));
+                fclose($my_file);
+            ?>
+        </style>
         <?php wp_head(); ?>
         <script id="recaptcha"></script>
     </head>
