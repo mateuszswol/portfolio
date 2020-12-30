@@ -26,4 +26,4 @@ wp-cli.local.yml
 # npm
 node_modules
 
-/config/backup
+config/backup
