@@ -21,7 +21,7 @@ function load_captcha(){
 }
 
 async function postData(formattedFormData){
-    const response = await fetch('/contact.php',{
+    const response = await fetch('/app/themes/mats-theme/contact.php',{
         method: 'POST',
         body: formattedFormData
     });

@@ -25,6 +25,8 @@
     </div>
     <div class="contact-form__footer">
         <div class="contact-form__confirmation"></div>
+        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
+        <input type="hidden" name="action" value="form" />
         <input class="contact-form__submit" type="submit" value="Wyślij wiadomość" />
     </div>
 </form>
