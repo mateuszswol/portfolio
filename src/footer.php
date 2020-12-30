@@ -27,6 +27,11 @@ if ( !defined('ABSPATH') ){ die(); }
                                 LinkedIn
                             </a>
                         </li>
+                        <li class="footer__social">
+                            <a class="footer__link" href="https://github.com/mateuszswol/portfolio">
+                                Github
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__right">

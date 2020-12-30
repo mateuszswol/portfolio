@@ -19,7 +19,7 @@ if($recaptcha->score >= 0.5) {
     $mail->From = "noreply@mateuszswol.pl";
     $mail->FromName = "Formularz kontaktowy";
     $mail->AddReplyTo('noreply@mateuszswol.pl', 'Formularz kontaktowy');
-    $mail->Host = "ssd13.cyber-folks.com";
+    $mail->Host = "ssd13.cyber-folks.pl";
     $mail->SMTPAuth = true;
     $mail->Username = "noreply@mateuszswol.pl";
     $mail->Password = 'H1<@b412F@,@L2f';
@@ -29,7 +29,7 @@ if($recaptcha->score >= 0.5) {
     Adres e-mail: '.$_POST['email'].'
     Tytuł wiadomości: '.$_POST['subject'].'
     Wiadomość: '.$_POST['message'];
-    $mail->AddAddress('biuro@mateuszswol.pl',"Mateusz");
+    $mail->AddAddress('mateusz@creato.pl',"Mateusz");
     if($mail->Send()){
       echo 'Wiadomość wysłana poprawnie!';
     }
@@ -38,7 +38,7 @@ if($recaptcha->score >= 0.5) {
     }
   }
 } else {
-    header("Location: ".$cur_url."?sent=fail2");
+  header("Location: ".$cur_url."?sent=fail");
 }
 
 
