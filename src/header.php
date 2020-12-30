@@ -20,6 +20,7 @@ if ( !defined('ABSPATH') ){ die(); }
         <meta charset="UTF-8" />
         <meta name="generator" content="MatsTheme" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+        <link rel="shortcut icon" href="/app/uploads/favicon.png" />
         <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-Light.woff2' ?>" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-Regular.woff2' ?>" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" as="font" href="<?php echo MATS_THEME_FONTS . 'Poppins-SemiBold.woff2' ?>" type="font/woff2" crossorigin="anonymous">
