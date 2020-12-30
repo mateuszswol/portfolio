@@ -42,7 +42,7 @@ $loop = new WP_Query( $args );
             <?php $page_url = (!empty(get_field('page_url', get_the_ID()))) ? get_field('page_url', get_the_ID()) : ''; ?>
             <a class="portfolio__item" href="<?php echo get_permalink(); ?>">
                 <div class="portfolio__container">
-                    <img class="portfolio__img" src="<?php echo get_the_post_thumbnail_url() ?>" alt="" />
+                    <img class="portfolio__img" src="<?php echo get_the_post_thumbnail_url('','640x') ?>" alt="<?php echo get_the_title(); ?>" />
                 </div>
                 <h3 class="portfolio__title"><?php echo get_the_title(); ?></h3>
                 <?php if(!empty($page_url)): ?>

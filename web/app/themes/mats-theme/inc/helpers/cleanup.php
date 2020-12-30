@@ -25,14 +25,15 @@ add_action('widgets_init', function () {
     remove_action('wp_head', [$wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style']);
 });
 
-function wpassist_remove_block_library_css()
+function remove_assets()
 {
     wp_dequeue_style('wp-block-library');
     wp_dequeue_script('jquery');
     wp_deregister_script('jquery');
 }
 
-add_action('wp_enqueue_scripts', 'wpassist_remove_block_library_css');
+add_action('wp_enqueue_scripts', 'remove_assets');
+
 remove_action('wp_head', 'feed_links');
 remove_action('wp_head', 'feed_links_extra');
 remove_action('wp_head', 'rsd_link');

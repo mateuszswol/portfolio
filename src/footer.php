@@ -33,7 +33,6 @@ if ( !defined('ABSPATH') ){ die(); }
                     <p>Strona wykonana przez <a class="footer__link" href="https://mateuszswol.pl">Mateusza Swół</a></p>
                 </div>
             </footer>
-            <script src="/app/themes/mats-theme/assets/js/splide.min.js"></script>
             <script src="/app/themes/mats-theme/assets/js/scripts.js"></script>
         </div>
     </body>

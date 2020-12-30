@@ -34,6 +34,7 @@ if ( !defined('ABSPATH') ){ die(); }
                 <a class="logo" href="<?php echo esc_url(home_url()); ?>">
                     <img class="logo__img" src="/app/uploads/logo-mateusz-swol.svg" />
                 </a>
+                <div id='hamburger' class='hamburger header__hamburger'><span class='hamburger__span'></span></div>
                 <nav class="menu">
                     <?php wp_nav_menu([
                         'theme_location'  => 'mats-header-menu',

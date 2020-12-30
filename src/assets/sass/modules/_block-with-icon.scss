@@ -18,6 +18,48 @@
 
   &__title {
     margin-bottom: 0px;
+
+    @media (max-width: 992px){
+      line-height: 1.45em;
+      margin-bottom: 15px;
+      margin-top: 5px;
+    }
+
+    &--phone, &--email {
+      color:#888;
+      font-size:18px;
+      font-weight:400;
+
+      @media (max-width: 992px){
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__link {
+    color:#333;
+    font-size:22px;
+    font-weight:600;
+    line-height:1.2em;
+
+    @media (max-width: 400px) {
+      font-size:18px;
+    }
+
+    &:hover {
+      line-height:1.2em;
+    }
+  }
+
+  &--link {
+    .block-with-icon__img {
+      margin-top:0px;
+      vertical-align:middle;
+    }
+
+    .block-with-icon__content{
+      vertical-align:middle;
+    }
   }
 
 }

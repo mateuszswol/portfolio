@@ -138,6 +138,24 @@ function acf_portfolio_block() {
     }
 }
 
+function acf_contact_form_block() {
+
+    // check function exists
+    if( function_exists('acf_register_block') ) {
+
+        // register a portfolio item block
+        acf_register_block(array(
+            'name'				=> 'contact_form',
+            'title'				=> __('Contact Form'),
+            'description'		=> __('Creating a list with portfolio'),
+            'render_template'	=> 'template-parts/blocks/contact-form/block-contact-form.php',
+            'category'			=> 'layout',
+            'icon'				=> 'list-view',
+            'keywords'			=> array( 'contact-form' ),
+        ));
+    }
+}
+
 add_action('acf/init', 'acf_image_in_circle_block');
 add_action('acf/init', 'acf_buttons_block');
 add_action('acf/init', 'acf_block_with_icon_block');
@@ -145,5 +163,6 @@ add_action('acf/init', 'acf_gallery_block');
 add_action('acf/init', 'acf_timeline_block');
 add_action('acf/init', 'acf_special_list_block');
 add_action('acf/init', 'acf_portfolio_block');
+add_action('acf/init', 'acf_contact_form_block');
 
 ?>

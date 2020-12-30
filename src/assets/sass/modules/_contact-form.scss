@@ -1,0 +1,72 @@
+.contact-form {
+
+  &__group {
+    margin-bottom:20px;
+  }
+
+  &__input {
+    border:2px solid #ccc;
+    border-radius:5px;
+    font-family:'Poppins', sans-serif;
+    font-size:16px;
+    outline-color: #ccc;
+    padding:13px 12px;
+    transition:outline-color .4s ease;
+    width:100%;
+
+    &:focus{
+      outline-color: #6961f1;
+    }
+
+  }
+
+  &__label {
+    display:none;
+  }
+
+  &__left {
+    display:inline-block;
+    padding-right:20px;
+    vertical-align:top;
+    width:calc(50% - 5px);
+
+    @media (max-width: 992px) {
+      padding-right: 0px;
+      width:100%;
+    }
+  }
+
+  &__right {
+    display:inline-block;
+    vertical-align:top;
+    width:50%;
+
+    @media (max-width: 992px) {
+      width:100%
+    }
+  }
+
+  &__submit {
+    background-color:#fff;
+    border: 2px solid #6961f1;
+    border-radius: 2em;
+    color: #333;
+    cursor:pointer;
+    display: inline-block;
+    font-family:'Poppins', sans-serif;
+    font-size:16px;
+    margin-right: 15px;
+    outline:none !important;
+    padding: 10px 30px;
+    transition: box-shadow .7s ease, color .7s ease, outline-color .7s ease;
+
+    &:focus {
+      outline:none !important;
+    }
+
+    &:hover {
+      box-shadow: inset 0 0 0 2em #6961f1;
+      color: #fff
+    }
+  }
+}

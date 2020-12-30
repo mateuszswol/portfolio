@@ -68,5 +68,9 @@
   &__tooltip {
     display:inline-block;
     position:relative;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 }

@@ -17,16 +17,30 @@
 
   &__left, &__right {
     display: inline-block;
-    vertical-align: middle
+    vertical-align: middle;
+
+    @media (max-width: 600px) {
+      text-align: center;
+      width: 100%;
+    }
   }
 
   &__right {
-    float: right
+    float: right;
+
+    @media (max-width: 600px) {
+      float:none;
+      margin-top:15px;
+    }
   }
 
   &__social {
     display: inline-block;
-    margin-right: 25px
+    margin-right: 25px;
+
+    &:last-child{
+      margin-right:0px;
+    }
   }
 
   &__link {

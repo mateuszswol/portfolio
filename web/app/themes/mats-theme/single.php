@@ -10,7 +10,6 @@ get_header();
                 <h1><?php the_title(); ?></h1>
             </div>
         </div>
-        <div style="height:40px" aria-hidden="true" class="spacer "></div>
         <div class="columns">
             <div class="columns__col columns__col--eight">
                 <?php the_content(); ?>

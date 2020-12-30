@@ -12,12 +12,21 @@
     text-align:right;
   }
 
+  @media (max-width: 992px){
+    text-align:left;
+  }
+
+
   &__img {
     border: 20px solid #fff;
     border-radius: 100%;
     box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
     width: 360px;
     @include transition(border,.2s,linear);
+
+    @media (max-width: 992px){
+      margin-bottom: 40px;
+    }
 
     &:hover {
       border: 4px solid #fff;
