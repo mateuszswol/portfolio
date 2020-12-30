@@ -36,7 +36,7 @@ if( have_rows('button') ):
 
         ?>
 
-        <a class="buttons__btn buttons__btn--<?php echo esc_attr($style); ?>" href="<?php esc_url($link) ?>" <?php echo esc_html($new_tab) ?>>
+        <a class="buttons__btn buttons__btn--<?php echo esc_attr($style); ?>" href="<?php echo esc_url($link) ?>" <?php echo esc_html($new_tab) ?>>
             <?php echo esc_html($label); ?>
         </a>
 

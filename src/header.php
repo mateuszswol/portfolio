@@ -27,6 +27,7 @@ if ( !defined('ABSPATH') ){ die(); }
             echo '<link rel="stylesheet" href="/app/themes/mats-theme/assets/css/main.css" />';
         ?>
         <?php wp_head(); ?>
+        <script id="recaptcha"></script>
     </head>
     <body id="top">
         <div class="container">

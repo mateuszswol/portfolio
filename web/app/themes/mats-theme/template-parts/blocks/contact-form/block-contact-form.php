@@ -2,7 +2,7 @@
 
 ?>
 
-<form class="contact-form" action="" method="POST">
+<form id="form" class="contact-form" action="" method="POST">
     <div class="contact-form__left">
         <div class="contact-form__group">
             <label class="contact-form__label" for="name">Imię i nazwisko</label>
@@ -24,6 +24,7 @@
         </div>
     </div>
     <div class="contact-form__footer">
+        <div class="contact-form__confirmation"></div>
         <input class="contact-form__submit" type="submit" value="Wyślij wiadomość" />
     </div>
 </form>
